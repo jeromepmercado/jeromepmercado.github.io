@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #dcdcdc;
+        }
+
+        .navbar-custom {
+            background-color: #455037;
+            border-radius: 15px;
+            padding: 10px 40px;
+        }
+
+        .navbar-brand {
+            color: #FEFAE0 !important;
+            font-weight: bold;
+            font-size: 28px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .nav-link {
+            color: #FEFAE0 !important;
+            font-weight: 500;
+            margin-left: 25px;
+        }
+
+        .nav-link:hover {
+            color: #e3e3e3 !important;
+            text-decoration: underline;
+        }
+
+        .nav-wrapper {
+            margin-top: 25px;
+        }
+
+        .intro-card {
+            background-color: #bebebec7;
+            border-radius: 40px;
+            padding: 50px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .intro-text h1 {
+            color: #294508;
+            font-family: "Libre Caslon Text", serif;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .intro-text p {
+            color: #294508;
+            font-family: "Libre Caslon Text", serif;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .intro-image {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            border-radius: 40px;
+        }
+
+        .intro-image::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 100%;
+            height: 100%;
+            background-color: #2F3A1A;
+            border-radius: 25px;
+            z-index: 0;
+        }
+
+        .intro-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        .about-card {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .about-card h1 {
+            color: #294508;
+            font-family: "Libre Caslon Text", serif;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .about-card h2 {
+            color: #2E4610;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .about-card p {
+            color: #1e1e1e;
+            font-family: "Poppins", serif;
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: justify;
+            text-indent: 60px;
+        }
+
+        .abt-card {
+            background-color: #4f5b40;
+            opacity: 98%;
+            border-radius: 40px;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-image {
+            background-color: #a2a896;
+            width: 300px;
+            height: 300px;
+            border-radius: 40px;
+        }
+
+        .about-details {
+            text-align: left;
+            color: #FEFAE0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .about-details h4 {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 10px;
+        }
+
+        .about-details p {
+            margin: 8px 0;
+        }
+
+        .contact-card {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contact-card h1 {
+            color: #294508;
+            font-family: "Libre Caslon Text", serif;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h2 {
+            color: #2E4610;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .con-card {
+            background-color: #4f5b40;
+            border-radius: 10px;
+        }
+
+        .con-card h4 {
+            color: #e3e3e3;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container nav-wrapper position-sticky top-0 z-1">
+        <nav class="navbar navbar-expand-lg navbar-custom d-flex justify-content-between">
+            <div class="navbar-brand">JEROME</div>
+            <div class="navbar-nav d-flex flex-row">
+                <a class="nav-link" href="#">HOME</a>
+                <a class="nav-link" href="#about">ABOUT ME</a>
+                <a class="nav-link" href="#contact">CONTACT ME</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="intro-card shadow row align-items-center justify-content-justify">
+                    <div class="intro-text col text-center text-md-start mb-4 mb-md-0">
+                        <h1>Hello, I am <i>Jerome Mercado</i>!</h1>
+                        <p>UI/UX DESIGNER & PROGRAMMER</p>
+                    </div>
+
+                    <div class="intro-image col-12 col-md-5 col-lg-4 text-center">
+                        <img src="images/intro_card_pic.jpg" class="img-fluid rounded-4" alt="Jerome">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="about" class="about-card m-5">
+                    <h1>ABOUT ME</h1>
+                    <h2>Who am I?</h2>
+                    <p>I am <b>Jerome</b>, a <b>third-year</b> college student at the <b>Polytechnic University of the
+                            Philippines</b>,
+                        deeply interested in <i>UI/UX design and web development</i>. I am currently pursuing a
+                        <b>Bachelor of Science in Information Technology</b>. I also work with tools such as
+                        <b>Figma</b> and <b>Visual Studio Code</b> to design and build projects that challenge my
+                        creativity and
+                        problem-solving.
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="abt-card shadow">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-5 text-center">
+                            <img src="images/formal_picture.png" class="img-fluid rounded-4" alt="Jerome">
+                        </div>
+                        <div class="col-12 col-md-7 about-details px-4">
+                            <h4><b>NAME:</b> Jerome Mercado</h4>
+                            <h4><b>NICKNAME:</b> Jiro</h4>
+                            <h4><b>AGE:</b> 20</h4>
+                            <h4><b>SCHOOL:</b> Polytechnic University of the Philippines</h4>
+                            <h4><b>ADDRESS:</b> Tanauan, Batangas</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="contact" class="contact-card m-5 text-center">
+                    <h1>CONTACT ME</h1>
+                    <h2>Let's work together!</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <div class="con-card my-1 px-1 shadow">
+                    <h4><b>Email:</b> jiro@gmail.com</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="con-card my-1 px-1 shadow">
+                    <h4><b>Phone Number:</b> +63 912 345 6789</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        © 2025 Jerome Mercado. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
