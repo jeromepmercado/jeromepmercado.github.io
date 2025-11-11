@@ -1,0 +1,257 @@
+ body {
+     background-color: #dcdcdc;
+ }
+
+ /* navbar css */
+ .navbar-custom {
+     background-color: #455037;
+     border-radius: 15px;
+     padding: 10px 40px;
+ }
+
+ .navbar-brand {
+     color: #FEFAE0 !important;
+     font-weight: bold;
+     font-size: 28px;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ .nav-link {
+     color: #FEFAE0 !important;
+     font-weight: 500;
+     margin-left: 25px;
+ }
+
+ .nav-link:hover {
+     color: #e3e3e3 !important;
+     text-decoration: underline;
+ }
+
+ .nav-wrapper {
+     margin-top: 25px;
+ }
+
+ /* intro-card css */
+ .intro-card {
+     background-color: #bebebec7;
+     border-radius: 40px;
+     padding: 50px;
+     margin-top: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .intro-text h1 {
+     color: #294508;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 80px;
+     font-weight: bold;
+ }
+
+ .intro-text h2 {
+     color: #2E4610;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 65px;
+     margin-top: -10px;
+ }
+
+ .intro-text p {
+     color: #294508;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 18px;
+     margin-top: 15px;
+ }
+
+ .intro-image {
+     position: relative;
+     width: 320px;
+     height: 320px;
+     border-radius: 40px;
+ }
+
+ .intro-image::before {
+     content: "";
+     position: absolute;
+     top: 15px;
+     left: 15px;
+     width: 100%;
+     height: 100%;
+     background-color: #2F3A1A;
+     border-radius: 25px;
+     z-index: 0;
+ }
+
+ .intro-image img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 40px;
+     object-fit: cover;
+     background-color: #fff;
+ }
+
+ /* about-card css */
+ .about-card {
+     text-align: center;
+     margin-top: 80px;
+ }
+
+ .about-card h1 {
+     color: #294508;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .about-card h2 {
+     color: #2E4610;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     margin-bottom: 30px;
+ }
+
+ .about-card p {
+     color: #1e1e1e;
+     font-family: "Poppins", serif;
+     font-size: 16px;
+     line-height: 1.7;
+     text-align: justify;
+     text-indent: 60px;
+ }
+
+ .abt-card {
+     background-color: #4f5b40;
+     opacity: 98%;
+     border-radius: 40px;
+     padding: 50px;
+     display: flex;
+     align-items: center;
+     gap: 60px;
+ }
+
+ .about-image {
+     background-color: #a2a896;
+     width: 300px;
+     height: 300px;
+     border-radius: 40px;
+ }
+
+ .about-details {
+     text-align: left;
+     color: #FEFAE0;
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+     line-height: 1.8;
+     padding: 20px;
+ }
+
+ .about-details h4 {
+     font-family: 'Poppins', sans-serif;
+     padding-top: 10px;
+ }
+
+ .about-details p {
+     margin: 8px 0;
+ }
+
+ /* projects-section css */
+ .projects-section {
+     text-align: center;
+     margin-top: 40px;
+     margin-bottom: 20px;
+ }
+
+ .projects-section h1 {
+     color: #294508;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .projects-section h2 {
+     color: #2E4610;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     margin-bottom: 30px;
+ }
+
+ .projects-section .card {
+     background-color: #ffffff;
+     border: none;
+     height: 360px;
+     margin: 5px auto;
+     border-radius: 20px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     cursor: pointer;
+ }
+
+ .projects-section .card:hover,
+ .projects-section .card:active {
+     transform: translateY(-8px) scale(1.03);
+ }
+
+ /* hover card effect */
+ .projects-section .card img {
+     width: 100%;
+     height: 200px;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     transition: transform 0.4s ease;
+ }
+
+ /* expand image together with card once hovered */
+ .projects-section .card:hover img,
+ .projects-section .card:active img {
+     transform: scale(1.00);
+ }
+
+ .projects-section p {
+     font-family: 'Poppins', sans-serif;
+     font-size: 12px;
+     transition: color 0.3s ease;
+ }
+
+ .projects-section .card:hover p,
+ .projects-section .card:active p {
+     color: #6d0a0a;
+ }
+
+ /* contact-card css */
+ .contact-card {
+     text-align: center;
+     margin-top: 80px;
+ }
+
+ .contact-card h1 {
+     color: #294508;
+     font-family: "Libre Caslon Text", serif;
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .contact-card h2 {
+     color: #2E4610;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     margin-bottom: 30px;
+ }
+
+ .con-card {
+     background-color: #4f5b40;
+     border-radius: 10px;
+ }
+
+ .con-card h4 {
+     color: #e3e3e3;
+     font-family: "Poppins", sans-serif;
+     font-size: 20px;
+     text-align: center;
+     padding: 10px;
+ }
