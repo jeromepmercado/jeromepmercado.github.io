@@ -219,8 +219,23 @@
 
  .projects-section .card:hover p,
  .projects-section .card:active p {
-     color: #6d0a0a;
+     color: #005313;
  }
+
+ .projects-section .web-btn {
+     background-color: #455037;
+     color: #FEFAE0;
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
+     padding: 8px 16px;
+     border: none;
+     border-radius: 8px;
+     text-decoration: none;
+     display: inline-block;
+     margin-top: 10px;
+     transition: background-color 0.3s ease;
+ }
+
 
  /* contact-card css */
  .contact-card {
